@@ -1,14 +1,21 @@
-from biblioteca import Pessoa
+from biblioteca import ContaBancaria
 
-aluno01=Pessoa(130,"Thais Karla", 87)
-aluno02=Pessoa(57,"Taynara Raynara", 23)
+conta01=ContaBancaria("Karla", 453225, "agencia")
+conta01.verificarSaldo()
+conta01.ativarConta()
+conta01.verificarSaldo()
+conta01.depositar(45)
+conta01.depositar(56)
+conta01.verificarSaldo()
+conta01.sacar(102)
+conta01.verificarSaldo()
+conta01.novoLimite(100)
+conta01.sacar(100)
+conta01.depositar(100)
+conta01.verificarSaldo()
+conta01.sacar(200)
+conta01.verificarSaldo()
 
-print(aluno01.nome)
-print(aluno02.nome)
-aluno01.pararComer()
-aluno01.comer()
-aluno01.pararComer()
-aluno01.comer()
 
 
 
