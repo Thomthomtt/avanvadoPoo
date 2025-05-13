@@ -1,6 +1,7 @@
 from biblioteca import *
 
-show=Ingresso(valor=70)
-show=Vip(valor=70)
-show.imprimeValor()
-show.valorVip()
+calculo=Retangulo()
+calculo.calculaArea(10,4)
+calculoTriangulo=Triangulo()
+calculoTriangulo.calculaArea(10,20)
+
