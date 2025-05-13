@@ -96,3 +96,57 @@ class ContaBancaria():
         else:
             self.limite+=limite
             print(f"Seu novo limite é: {self.limite}")
+
+#fazenda ou zoologico
+class Animal():
+    def __init__(self, nome, cor, pronome):
+        self.nome=nome
+        self.cor=cor
+        self.pronome=pronome
+    def comer(self):
+        print(f"{self.pronome} {self.nome} foi comer")
+
+class Gato(Animal):
+    def __init__(self, nome, cor, pronome):
+        super().__init__(nome,cor, pronome)
+    def miar(self, local):
+        print(f"O {self.nome} foi miando até a {local}")
+
+class Vaca(Animal):
+    def __init__(self, nome, cor, pronome):
+        super().__init__(nome, cor, pronome)
+    def muuu(self, volume):
+        print(f"A vaca {self.nome} fez muuu, muito {volume}")
+    def comer(self):
+        print(f"{self.pronome} {self.nome} foi comer capim")
+
+class Leopardo(Animal):
+    def __init__(self, nome, cor, pronome):
+        super().__init__(nome, cor, pronome)
+    def rugiu(self):
+        print(f"O {self.nome}, foi rugindo até a outra floresta")
+
+class Galinha(Animal):
+    def __init__(self, nome, cor, pronome):
+        super().__init__(nome, cor, pronome)
+    def Carajar(self):
+        print(f"A galinha {self.nome} fugiu do puleiro, cacarejando em alto e bom som")
+
+class Corvo(Animal):
+    def __init__(self, nome, cor, pronome):
+        super().__init__(nome, cor, pronome)
+    def Assuviar(self):
+        print(f"O {self.nome} está assoviando para acasalar!")
+
+#atividade esquema de ingresso
+class Ingresso():
+    def __init__(self, valor):
+        self.valor=valor
+    def imprimeValor(self):
+        print(f"O valor do ingresso é {self.valor}")
+class Vip(Ingresso):
+    def __init__(self, valor):
+        super().__init__(valor)
+        self.taxa=(valor*50/100)+valor
+    def valorVip(self):
+        print(f"O valor do Vip é: {self.taxa}")
